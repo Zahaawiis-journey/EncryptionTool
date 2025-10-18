@@ -8,6 +8,7 @@ public class Main {
 
         System.out.println("Enter a text to get encrypted");
         String test = scanner.nextLine();
+        StringBuilder encrypted = encryption.encryptText(test);
 
         System.out.println("Showing the text converted to number");
         System.out.println("------");
@@ -16,24 +17,24 @@ public class Main {
 
         System.out.println("Encrypting text:");
         System.out.println("------");
-        System.out.println(encryption.encryptText(test));
+        System.out.println(encrypted);
         System.out.println("------");
 
         System.out.println("Showing the encryption progress");
         System.out.println("------");
-        System.out.println(Arrays.toString(encryption.convertTextToNumberArray(encryption.encryptText(test))));
+        System.out.println(Arrays.toString(encryption.convertTextToNumberArray(encrypted)));
         System.out.println("------");
 
 
         System.out.println("Converting encrypted to origin number");
         System.out.println("------");
-        System.out.println(Arrays.toString(encryption.convertArrayEncryptedToOriginNumber(encryption.encryptText(test))));
+        System.out.println(Arrays.toString(encryption.convertArrayEncryptedToOriginNumber(encrypted)));
         System.out.println("------");
 
 
         System.out.println("Decrypting the message");
         System.out.println("------");
-        System.out.println(encryption.convertNumberToText(encryption.encryptText(test)));
+        System.out.println(encryption.convertNumberToText(encrypted));
         System.out.println("------");
 
     }
