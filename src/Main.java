@@ -37,5 +37,6 @@ public class Main {
         System.out.println(encryption.convertNumberToText(encrypted));
         System.out.println("------");
 
+        scanner.close();
     }
 }
