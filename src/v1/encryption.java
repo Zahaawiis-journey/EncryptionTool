@@ -1,3 +1,5 @@
+package v1;
+
 import java.util.HashMap;
 
 public class encryption {

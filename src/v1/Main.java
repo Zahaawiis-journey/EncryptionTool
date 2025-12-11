@@ -1,3 +1,5 @@
+package v1;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -20,7 +22,7 @@ public class Main {
         System.out.println(encrypted);
         System.out.println("------");
 
-        System.out.println("Showing the encryption progress");
+        System.out.println("Showing the v1.encryption progress");
         System.out.println("------");
         System.out.println(Arrays.toString(encryption.convertTextToNumberArray(encrypted)));
         System.out.println("------");
@@ -39,4 +41,5 @@ public class Main {
 
         scanner.close();
     }
+
 }
