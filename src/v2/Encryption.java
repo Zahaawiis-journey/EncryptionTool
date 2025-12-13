@@ -18,6 +18,10 @@ public class Encryption {
         return null;
     }
 
+    private String encryptMessage() {
+        return null;
+    }
+
     private String sendMessage() {
         return "message";
     }
