@@ -24,22 +24,38 @@ public class Encryption {
         shuffledList = new ArrayList<>();
         character = ' ';
 
-        newKey();
+        encryptMessage();
     }
 
     private void getKey() {
     }
 
     private void newKey() {
+
     }
 
     private void encryptMessage() {
+        consoleMessages("Enter a message and it will be encrypted");
     }
 
     private void decryptMessage() {
+        consoleMessages("Decrypting the message that was received");
 
     }
 
     private void sendMessage() {
+    }
+
+    private void styleConsole(int n) {
+        for(int i = 0; i < n; i++) {
+            System.out.print("==========");
+        }
+    }
+
+    private void consoleMessages(String prompt) {
+        styleConsole(5);
+        System.out.println();
+        System.out.println(prompt);
+        styleConsole(5);
     }
 }
